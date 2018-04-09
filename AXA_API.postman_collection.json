@@ -1,0 +1,230 @@
+{
+	"info": {
+		"name": "AXA API",
+		"_postman_id": "7cd59356-ab26-438e-91d7-2f50e355163e",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"description": "",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "barnettblankenship@quotezart.com",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"description": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/user/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"user",
+								"login"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get User",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Barear eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1MjMyMjcxOTgsImV4cCI6MTUyMzI5OTE5OCwicGF5bG9hZCI6eyJpZCI6ImEzYjhkNDI1LTJiNjAtNGFkNy1iZWNjLWJlZGYyZWY4NjBiZCIsIm5hbWUiOiJCYXJuZXR0IiwiZW1haWwiOiJiYXJuZXR0YmxhbmtlbnNoaXBAcXVvdGV6YXJ0LmNvbSIsInJvbGUiOiJ1c2VyIn19.forhVsQWVxSK-xdIr1E7p87DFoZRaWyD5i1BHrO9Y6I"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:3000/api/user/44e44268-dce8-4902-b662-1b34d2c10b8e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"user",
+								"44e44268-dce8-4902-b662-1b34d2c10b8e"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get User Of Policie",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Barear eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1MjMyMjcxOTgsImV4cCI6MTUyMzI5OTE5OCwicGF5bG9hZCI6eyJpZCI6ImEzYjhkNDI1LTJiNjAtNGFkNy1iZWNjLWJlZGYyZWY4NjBiZCIsIm5hbWUiOiJCYXJuZXR0IiwiZW1haWwiOiJiYXJuZXR0YmxhbmtlbnNoaXBAcXVvdGV6YXJ0LmNvbSIsInJvbGUiOiJ1c2VyIn19.forhVsQWVxSK-xdIr1E7p87DFoZRaWyD5i1BHrO9Y6I"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:3000/api/user/policie/64cceef9-3a01-49ae-a23b-3761b604800b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"user",
+								"policie",
+								"64cceef9-3a01-49ae-a23b-3761b604800b"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get User By Name",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Barear eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1MjMyMjI5NTMsImV4cCI6MTUyMzI5NDk1MywicGF5bG9hZCI6eyJpZCI6ImEwZWNlNWRiLWNkMTQtNGYyMS04MTJmLTk2NjYzM2U3YmU4NiIsIm5hbWUiOiJCcml0bmV5IiwiZW1haWwiOiJicml0bmV5YmxhbmtlbnNoaXBAcXVvdGV6YXJ0LmNvbSIsInJvbGUiOiJhZG1pbiJ9fQ.4jLgUEVBVhMOBUy84o0cuFXxpF-PoXkIVgBNohm9X-8"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Lamb",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/user/name",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"user",
+								"name"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Policies",
+			"description": "",
+			"item": [
+				{
+					"name": "Get Policies By User Name",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Barear eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1MjMyMjkzNTAsImV4cCI6MTUyMzMwMTM1MCwicGF5bG9hZCI6eyJpZCI6ImEzYjhkNDI1LTJiNjAtNGFkNy1iZWNjLWJlZGYyZWY4NjBiZCIsIm5hbWUiOiJCYXJuZXR0IiwiZW1haWwiOiJiYXJuZXR0YmxhbmtlbnNoaXBAcXVvdGV6YXJ0LmNvbSIsInJvbGUiOiJ1c2VyIn19.W1KVQpgTaCAJhM5k1JUm3goqJXn2xdR6bb88-OsdEUs"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Manning",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/policie/username",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"policie",
+								"username"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "42f06934-1d53-41d3-bcd6-dd09198acaf2",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "1f2eedb3-a2dc-4aa9-9dad-da247821c8ab",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

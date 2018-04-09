@@ -1,0 +1,36 @@
+{
+  "name": "server",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "ENVIROMENT=development nodemon ./bin/www",
+    "prod": "ENVIROMENT=production node ./bin/www",
+    "stage": "ENVIROMENT=staging node ./bin/www",
+    "test": "ENVIROMENT=test mocha --timeout 15000"
+  },
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "cors": "^2.8.4",
+    "debug": "~2.6.3",
+    "express": "~4.15.2",
+    "express-validation": "^1.0.2",
+    "html2jade": "^0.8.6",
+    "jade": "~1.11.0",
+    "joi": "^13.0.1",
+    "jwt-simple": "^0.5.1",
+    "moment": "^2.19.1",
+    "mongoose": "^4.9.4",
+    "morgan": "~1.8.1",
+    "mysql": "^2.15.0",
+    "request": "^2.85.0",
+    "serve-favicon": "~2.4.2"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
+    "mocha": "^5.0.5",
+    "nodemon": "^1.12.1"
+  }
+}
